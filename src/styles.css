@@ -59,6 +59,15 @@ body {
   padding: 0;
 }
 
+#root {
+  width: 100%;
+  text-align: center;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
 .square {
   background: #fff;
   border: 2px solid #333;
@@ -86,10 +95,18 @@ body {
 .game {
   display: flex;
   flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+  height: 100vh;
 }
 
+.game-board {
+  display: flex;
+  align-items: center;
+}
 .game-info {
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .status {
@@ -108,4 +125,23 @@ body {
 
 .board{
   margin-top: 25px;
+}
+
+.moves {
+  list-style: none;
+  padding: 0;
+}
+.moveButton {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #8B1874;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+}
+
+.moveButton:hover {
+  background-color: #8d497f;
 }
